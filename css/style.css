@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&family=Joan&family=Oswald:wght@500&display=swap');
+
+
+*{ margin :0 ;
+   padding : 0;}
+
+  
+   
+  html {font-size: 62.5%;}	
+
+
+
+  body	{ background-image: url(../img/fondo2.jpg); 
+          background-attachment: fixed;}
+
+
+h1{ color: #B66A20;
+    text-align : center;
+    font-size: 7rem ;
+    background-color:rgba( 53,44,56, .8  ) ; 
+      width: 30% ;
+       margin: auto;}
+
+h2{		 background-color:rgba( 53,44,56, .8  ) ; 
+      width: 33% ;
+       margin: auto; 
+   color: #646262 ;
+   font-size: 4rem ;
+   ;
+}
+
+h3 { color: red ;
+     font-size : 3rem ; }
+
+
+h2 { font-family: 'Oswald', sans-serif; }
+
+
+h4 {  text-align : center;
+    font-size: 3rem ;
+    background-color:rgba( 100,60,30, .8  ) ; 
+      width: 30% ; }
+
+p{   
+	font-family: 'Charis SIL', serif; 
+     font-size: 2rem	; 
+     line-height: 3rem ;
+    
+     
+     } 
+
+
+nav ul {  display: flex;
+         margin-right: 550px
+          }
+
+nav ul li { list-style: none;
+	     margin-right: 40px
+         }
+
+
+nav ul li a { font-size: 3rem;
+             text-decoration: none;
+             color: #D98C07 ;
+              font-family: 'Joan', serif; 
+              }
+
+ footer { display: flex;
+ 	      flex-direction: column;
+ 	      justify-content: center;
+ 	         align-items: center;
+          }
+
+         
+     
+
+
+      .background__parrafo { background-color: rgba( 53,44,56, .8 );:  }
+
+     .text-color { color: #000000; }
+
+     .text-center  { text-align: center; }
+
+      .acerca__de--wos { width: 80%  ;
+                    height: 250px ;
+                   margin: auto;
+                   padding: 40px 40px ;
+                   border: solid rgba(100,100,100, 1.0) 4px ;
+                   overflow: auto; }
+
+
+      .acerca { background-color : rgba( 53,44,56,1.0 ) ; 
+  	         width: 12% ;
+             margin: auto; }                 
+ 
+
+      .alinearflex { display: flex;
+                justify-content: center; }
+
+       
+
+     .centrar__conciertos { border: solid rgba(100,100,100, 1.0) 4px ;
+                         font-size: 3rem ; 
+                         width: 50% ; 
+                         margin: auto;
+                         color: #E2E2E2}      
+
+     .fechas__wos { border: solid rgba(100,100,100, 1.0) 4px ;
+                font-size: 5rem ;
+                 width: 70% ; 
+                  margin: auto  ;    
+                 color: #9C0202 ;
+                   background-color:rgba( 53,44,56, .8  ) ;
+                   text-align: center;}                      
+ 
+   .contenedor{ display: grid;
+               grid-template-columns: 1fr ; 
+                grid-template-rows: auto;
+                grid-template-areas:
+                "nav" 
+                "header"
+                "parrafo" 
+                 "footer"   ;}
+
+    .mainNav{ grid-area: nav ;  }   
+
+
+    .header{ grid-area: header ; }
+
+    .parrafo { grid-area: parrafo  }
+    
+
+    .footer { grid-area: footer ; }        
+
+    .botonera {   background-color: rgba( 0,0,0,1.0 );
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; }
+
+        @media	(min-width: 768px )
+                 {.contenedor { grid-template-columns: 20vw 80vw  ;
+                   grid-template-rows: repeat(3 , auto ) ;
+                   grid-template-areas: 	
+                   "nav nav"
+                   " header parrafo"
+                   "footer footer"   ; }
+
+
+              .texto{ display: flex;
+ 	    
+ 	         margin-right: 40px ;
+ 	         width: 90%}
+
+   
+    .header_index {height: 70vh ;
+                   animation-name: headeranimation ; 
+                   animation-duration: 10s;
+                   animation-iteration-count: infinite;
+                   animation-timing-function: linear;
+                   background size:  cover
+                    }
+
+                    @keyframes headeranimation{ 
+                     0% {background-image: url( ../img/wos3.jpg);} 
+                       40% {background-image: url( ../img/header.jpg);}
+                       80% {background-image: url( ../img/header2.jpg);}
+                        100% {background-image: url( ../img/header3.jpg);}
+
+
+                      }
